@@ -1,3 +1,6 @@
+require 'kramdown'
+require 'slim'
+
 module PageBuilder
   class Layout
     def self.no_layout

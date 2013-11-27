@@ -1,0 +1,17 @@
+require 'kramdown'
+require 'slim'
+
+require_relative 'folder'
+
+Slim::Engine.set_default_options(
+  pretty: true,
+  sort_attrs: false,
+  disable_escape: true)
+
+task default: [:build]
+
+root_dir = "."
+
+task :build do
+  Folder.new(root_dir).process
+end

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'page/builder/version'
+require 'page-builder/page_builder'
 
 Gem::Specification.new do |spec|
   spec.name          = "page-builder"
-  spec.version       = Page::Builder::VERSION
+  spec.version       = PageBuilder::VERSION
   spec.authors       = ["Nathan Clark"]
   spec.email         = ["Nathan.Clark@tokenshift.com"]
   spec.description   = %q{Simple static site generator.}

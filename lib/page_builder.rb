@@ -1,6 +1,5 @@
 require 'page-builder/folder'
 require 'page-builder/layout'
-
 require 'rake'
 
 module PageBuilder
@@ -8,7 +7,7 @@ module PageBuilder
 
   # Defines and returns the "build" rake task.
   def self.rake_task(root_dir = ".")
-    @task ||= task :build do
+    @task ||= Rake::Task.define_task :build do
       Folder.new(root_dir).process
     end
   end

@@ -90,7 +90,7 @@ module PageBuilder
     context.instance_eval(Slim::Engine.new.call(file.read))
   end
 
-  def eval_template(context, source)
+  def self.eval_template(context, source)
     context.instance_eval(source)
   end
 

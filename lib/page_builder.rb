@@ -1,6 +1,8 @@
 require 'page-builder/folder'
 require 'page-builder/layout'
 
+require 'rake'
+
 module PageBuilder
   VERSION = "0.0.1"
 
